@@ -45,7 +45,7 @@ jobs:
    
     - name: Git remote add oringin URL
       run: |
-        ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@ec2-13-126-119-82.ap-south-1.compute.amazonaws.com 'cd ~/app && git remote add origin https://github.com/counain/deploy-automation.git'
+        ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@ec2-13-126-119-82.ap-south-1.compute.amazonaws.com 'cd ~/app && git remote add -f origin https://github.com/counain/deploy-automation.git'
 
     - name: Git Pull Origin Master
       run: |
